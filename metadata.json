@@ -1,0 +1,6 @@
+{
+  "name": "NODAK",
+  "description": "NODAK — Plataforma Empresarial SaaS en AWS con Checkout tipo Spotify/Stripe e Integraciones Google y Microsoft.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

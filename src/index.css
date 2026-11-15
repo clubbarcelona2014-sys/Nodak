@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    --font-sans: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    --nodak-void: #000000;
+    --nodak-canvas: #05070d;
+    --nodak-surface: #0a0e1a;
+    --nodak-elevated: #11172a;
+    --nodak-gold: #fccb06;
+    --nodak-crimson: #a50044;
+    --nodak-cobalt: #004d98;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #000000;
+    color: #f5f7fa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body, button, input, select, textarea {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Flagship NVIDIA-carbon canvas with subtle Blaugrana specular reflection */
+.blaugrana-hero-bg {
+  background:
+    radial-gradient(ellipse 58% 50% at 84% 18%, rgba(165, 0, 68, 0.28) 0%, transparent 64%),
+    radial-gradient(ellipse 52% 48% at 14% 86%, rgba(0, 77, 152, 0.30) 0%, transparent 66%),
+    #000000;
+}
+
+.blaugrana-cta-bg {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(165, 0, 68, 0.32), transparent 54%),
+    radial-gradient(circle at 12% 88%, rgba(0, 77, 152, 0.34), transparent 54%),
+    #060911;
+}
+
+.blaugrana-card {
+  background: linear-gradient(180deg, #090d18 0%, #05070d 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

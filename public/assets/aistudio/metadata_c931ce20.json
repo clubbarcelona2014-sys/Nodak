@@ -1,0 +1,6 @@
+{
+  "name": "NODAK",
+  "description": "Tecnología Empresarial. Sin Límites. Ecosistema SaaS de seis aplicaciones profesionales sobre AWS con control IAM automático y facturación Checking.com.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
